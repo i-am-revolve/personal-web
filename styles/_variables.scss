@@ -1,0 +1,46 @@
+// Primary
+$pw-color-primary: #81ABE6;
+
+// Secondary
+$pw-color-secondary-1: #81D5FC;
+$pw-color-secondary-2: #8194FC;
+
+// Dark
+$pw-color-dark-1: #4B5558;
+$pw-color-dark-2: #25292B;
+
+// White
+$pw-color-white: #F4F4F4;
+
+// Font Colors
+$pw-color-heading: $pw-color-dark-2;
+$pw-color-text: $pw-color-dark-2;
+
+// Sizes
+$pw-size-base: 4px;
+$pw-size-xxs: calc($pw-size-base);
+$pw-size-xs: calc($pw-size-base * 2);
+$pw-size-sm: calc($pw-size-base * 4);
+$pw-size-md: calc($pw-size-base * 6);
+$pw-size-lg: calc($pw-size-base * 8);
+$pw-size-xl: calc($pw-size-base * 10);
+$pw-size-xxl: calc($pw-size-base * 12);
+
+// Font Sizes
+$pw-size-heading-1: $pw-size-xxl;
+$pw-size-heading-2: $pw-size-xl;
+$pw-size-heading-3: $pw-size-lg;
+$pw-size-text: $pw-size-sm;
+
+// Font Weight
+$pw-weight-heading-1: 600;
+$pw-weight-heading-2: 500;
+$pw-weight-heading-3: 300;
+$pw-weight-text: 300;
+
+// Font Style
+$pw-style-heading: italic;
+$pw-style-text: normal;
+
+// Font Family
+$pw-font: 'Kanit', sans-serif;

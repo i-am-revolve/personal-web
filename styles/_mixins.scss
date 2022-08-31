@@ -1,0 +1,29 @@
+@mixin font($style, $color) {
+    font-family: $pw-font;
+    font-style: $style;
+    color: $color;
+}
+
+@mixin heading($weight, $size) {
+    @include font($pw-style-heading, $pw-color-heading);
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin heading-1 {
+    @include heading($pw-weight-heading-1, $pw-size-heading-1);
+}
+
+@mixin heading-2 {
+    @include heading($pw-weight-heading-2, $pw-size-heading-2);
+}
+
+@mixin heading-3 {
+    @include heading($pw-weight-heading-3, $pw-size-heading-3);
+}
+
+@mixin text {
+    @include font($pw-style-text, $pw-color-text);
+    font-weight: $pw-weight-text;
+    font-size: $pw-size-text;
+}

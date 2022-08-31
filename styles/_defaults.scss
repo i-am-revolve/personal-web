@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    background-color: $pw-color-white;
+}
+
+html, body, p {
+    @include text;
+}
+
+h1 {
+    @include heading-1;
+}
+
+h2 {
+    @include heading-2;
+}
+
+h3 {
+    @include heading-3;
+}
