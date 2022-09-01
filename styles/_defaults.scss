@@ -3,6 +3,10 @@ body {
     background-color: $pw-color-white;
 }
 
+body, html, div#__next {
+    height: 100vh;
+}
+
 html, body, p {
     @include text;
 }
@@ -17,4 +21,9 @@ h2 {
 
 h3 {
     @include heading-3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

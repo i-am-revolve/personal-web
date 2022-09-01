@@ -1,15 +1,9 @@
-// Primary
+// Colors
 $pw-color-primary: #81ABE6;
-
-// Secondary
 $pw-color-secondary-1: #81D5FC;
 $pw-color-secondary-2: #8194FC;
-
-// Dark
 $pw-color-dark-1: #4B5558;
 $pw-color-dark-2: #25292B;
-
-// White
 $pw-color-white: #F4F4F4;
 
 // Font Colors
@@ -44,3 +38,11 @@ $pw-style-text: normal;
 
 // Font Family
 $pw-font: 'Kanit', sans-serif;
+
+// Animations
+$pw-animation-duration: 150ms;
+
+// Breakpoints
+$pw-breakpoint-mobile: 425px;
+$pw-breakpoint-tablet: 768px;
+$pw-breakpoint-laptop: 1024px;

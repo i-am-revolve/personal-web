@@ -27,3 +27,27 @@
     font-weight: $pw-weight-text;
     font-size: $pw-size-text;
 }
+
+@mixin on-media($from, $to) {
+    @media screen and (min-width: $from) and (max-width: $to) {
+        @content;
+    }
+}
+
+@mixin on-mobile {
+    @include on-media(0px, $pw-breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin on-tablet {
+    @include on-media(calc($pw-breakpoint-mobile + 1px), $pw-breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin on-laptop {
+    @include on-media(calc($pw-breakpoint-tablet + 1px), $pw-breakpoint-laptop) {
+        @content;
+    }
+}
