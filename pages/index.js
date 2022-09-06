@@ -1,3 +1,10 @@
+import React from 'react';
+
+/**
+ * The Home page.
+ *
+ * @return {JSX.Element}
+ */
 export default function Home() {
   return (
     <section>
@@ -6,5 +13,5 @@ export default function Home() {
       <h3>Heading 3</h3>
       <p>Here is some content</p>
     </section>
-  )
+  );
 }
