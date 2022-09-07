@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -14,9 +14,8 @@
     "sass": "^1.54.7"
   },
   "devDependencies": {
-    "eslint": "^8.23.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-react": "^7.31.7",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
     "prop-types": "^15.8.1"
   }
 }
