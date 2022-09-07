@@ -38,17 +38,17 @@ export default function Layout({children}) {
         />
       </aside>
 
+      <span></span>
+
       <main>
         {children}
       </main>
 
-      <footer>
-        <span>&copy; Sandro Schaurer | Last updated: {new Date().toLocaleDateString('de-DE')} | View sourcecode on <a href="https://github.com/r-evolve/personal-web/">GitHub</a></span>
-      </footer>
+      <span></span>
     </div>
   );
 };
 
 Layout.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.arrayOf(PropTypes.element),
 };

@@ -47,3 +47,11 @@ $pw-animation-duration: 150ms;
 $pw-breakpoint-mobile: 425px;
 $pw-breakpoint-tablet: 768px;
 $pw-breakpoint-laptop: 1024px;
+
+// Border
+$pw-border-radius: $pw-size-base;
+
+// Elevation
+$pw-elevation: 0px $pw-size-base $pw-size-base rgba(0, 0, 0, 0.25);
+$pw-elevation-hover: 0px $pw-size-base $pw-size-sm $pw-color-primary;
+$pw-elevation-negative: inset 0px $pw-size-base $pw-size-base rgba(0, 0, 0, 0.25);

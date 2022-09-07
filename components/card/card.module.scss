@@ -1,0 +1,67 @@
+@import '../../styles/variables';
+
+.root {    
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    background-color: $pw-color-white;
+    border-radius: $pw-border-radius;
+    box-shadow: $pw-elevation;
+    transition-duration: $pw-animation-duration;
+
+    &:hover {
+        box-shadow: $pw-elevation-hover;
+        cursor: pointer;
+    }
+
+    &.has-image {
+        margin-top: $pw-size-xs;
+
+        & > span {
+            padding: 0 $pw-size-xs;
+            padding-bottom: $pw-size-xs;
+        }
+    }
+
+    & > span {
+        padding: $pw-size-xs;
+        text-align: center;
+        flex: 1;
+    }
+}
+
+.progress {
+    display: flex;
+    height: $pw-size-base * 1.5;
+    width: 100%;
+
+    background-color: $pw-color-gray;
+
+    border-radius: $pw-border-radius;
+    overflow: hidden;
+
+    span {
+        display: inline-block;
+        height: 100%;
+        width: 20%;
+        background-color: $pw-color-primary;
+
+        &:not(:first-child) {
+            border-left: 1px solid $pw-color-dark-1;
+        }
+    }
+}
+
+.image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: $pw-size-xs * -1;
+
+    span {
+        border-radius: $pw-border-radius;
+        z-index: 1000;
+    }
+}

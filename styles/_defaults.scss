@@ -23,7 +23,19 @@ h3 {
     @include heading-3;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+input, textarea {
+    border: none;
+    background-color: $pw-color-gray;
+    padding: $pw-size-sm;
+    box-shadow: $pw-elevation-negative;
+    border-radius: $pw-border-radius;
 }

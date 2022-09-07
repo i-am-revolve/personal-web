@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $pw-size-xxl * 2;
+
+    .skill-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $pw-size-sm $pw-size-xs;
+    }
+}
