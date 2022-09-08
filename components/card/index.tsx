@@ -1,18 +1,23 @@
-import Image from 'next/image';
-import cn from 'classnames';
+import Image from "next/image";
+import cn from "classnames";
 
-import styles from './card.module.scss';
+import styles from "./card.module.scss";
 
-export default function Card({children, progress = -1, image}): JSX.Element {
+type CardProps = {
+  children: JSX.Element | JSX.Element[];
+  progress: number;
+  image: string;
+};
+
+export default function Card({
+  children,
+  progress = -1,
+  image,
+}: CardProps): JSX.Element {
   function renderImage(): JSX.Element {
     return (
       <div className={styles.image}>
-        <Image
-          src={image}
-          height={64}
-          width={64}
-          alt={image}
-        />
+        <Image src={image} height={64} width={64} alt={image} />
       </div>
     );
   }
@@ -30,7 +35,7 @@ export default function Card({children, progress = -1, image}): JSX.Element {
   }
 
   return (
-    <div className={image ? cn(styles.root, styles['has-image']) : styles.root}>
+    <div className={image ? cn(styles.root, styles["has-image"]) : styles.root}>
       {image ? renderImage() : null}
 
       <span>{children}</span>

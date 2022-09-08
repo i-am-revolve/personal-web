@@ -1,4 +1,4 @@
-import Form from '@components/form';
+import Form from "@components/form";
 
 export default function Contact(): JSX.Element {
   return (

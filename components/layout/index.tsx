@@ -1,9 +1,13 @@
-import {useState} from 'react';
-import Head from 'next/head';
-import Navigation from '@components/navigation';
-import styles from './layout.module.scss';
+import { useState } from "react";
+import Head from "next/head";
+import Navigation from "@components/navigation";
+import styles from "./layout.module.scss";
 
-export default function Layout({children}): JSX.Element {
+type LayoutProps = {
+  children: JSX.Element[] | JSX.Element;
+};
+
+export default function Layout({ children }: LayoutProps): JSX.Element {
   const [showOnMobile, setShowOnMobile] = useState(false);
 
   function onClickOpenNavigation() {
@@ -30,11 +34,9 @@ export default function Layout({children}): JSX.Element {
 
       <span></span>
 
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
 
       <span></span>
     </div>
   );
-};
+}

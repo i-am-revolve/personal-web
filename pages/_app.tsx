@@ -1,7 +1,8 @@
-import Layout from '@components/layout';
-import '@styles/global.scss';
+import { AppProps } from "next/app";
+import Layout from "@components/layout";
+import "@styles/global.scss";
 
-export default function App({Component, pageProps}): JSX.Element {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <Layout>
       <Component {...pageProps} />

@@ -1,62 +1,64 @@
-@import '@styles/variables';
-@import '@styles/mixins';
+@import "@styles/variables";
+@import "@styles/mixins";
 
 nav.root {
-    &.show-on-mobile {
-        @include on-mobile {
-            display: flex;
-            height: 100vh;
-            width: 100vw;
-            z-index: 1000;
-            position: fixed;
-            top: 0;
-            left: 0;
+  &.show-on-mobile {
+    @include on-mobile {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      left: 0;
 
-            background-color: $pw-color-white;
-            justify-content: center;
-            align-items: center;
-        };
+      background-color: $pw-color-white;
+      justify-content: center;
+      align-items: center;
     }
+  }
 
-    ul {
-        margin: 0;
-        padding: 0;
+  ul {
+    margin: 0;
+    padding: 0;
 
-        li {
-            @include heading-3();
+    li {
+      @include heading-3();
 
-            color: $pw-color-dark-1;
-            list-style: none;
+      color: $pw-color-dark-1;
+      list-style: none;
 
-            &, &::before, &::after {
-                transition-duration: $pw-animation-duration;
-            }
+      &,
+      &::before,
+      &::after {
+        transition-duration: $pw-animation-duration;
+      }
 
-            &::before {
-                content: '// ';
-                opacity: 1;
-            }
+      &::before {
+        content: "// ";
+        opacity: 1;
+      }
 
-            &::after {
-                content: '()';
-                opacity: 0;
-            }
+      &::after {
+        content: "()";
+        opacity: 0;
+      }
 
-            &.active {
-                color: $pw-color-primary;
+      &.active {
+        color: $pw-color-primary;
 
-                &::before {
-                    opacity: 0;
-                }
-
-                &::after {
-                    opacity: 1;
-                }
-            }
-
-            &:hover {
-                color: $pw-color-secondary-1;
-            }
+        &::before {
+          opacity: 0;
         }
+
+        &::after {
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+        color: $pw-color-secondary-1;
+      }
     }
+  }
 }

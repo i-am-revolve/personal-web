@@ -1,5 +1,5 @@
-import Card from '@components/card';
-import styles from './form.module.scss';
+import Card from "@components/card";
+import styles from "./form.module.scss";
 
 export default function Form(): JSX.Element {
   return (

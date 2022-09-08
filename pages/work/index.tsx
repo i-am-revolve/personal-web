@@ -1,6 +1,3 @@
 export default function Work(): JSX.Element {
-  return (
-    <section>
-    </section>
-  );
+  return <section></section>;
 }
