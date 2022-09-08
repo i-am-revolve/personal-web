@@ -1,21 +1,11 @@
-import React, {useState} from 'react';
-import PropTypes from 'prop-types';
+import {useState} from 'react';
 import Head from 'next/head';
-
-import Navigation from '../navigation';
+import Navigation from '@components/navigation';
 import styles from './layout.module.scss';
 
-/**
- * This defines a layout which is used on the whole page
- *
- * @return {JSX.Element} The layout which is used by the application
- */
-export default function Layout({children}) {
+export default function Layout({children}): JSX.Element {
   const [showOnMobile, setShowOnMobile] = useState(false);
 
-  /**
-   * Handles the click on the menu button on mobile interfaces
-   */
   function onClickOpenNavigation() {
     setShowOnMobile(!showOnMobile);
   }
@@ -47,8 +37,4 @@ export default function Layout({children}) {
       <span></span>
     </div>
   );
-};
-
-Layout.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element),
 };

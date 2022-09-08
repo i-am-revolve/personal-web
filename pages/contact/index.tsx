@@ -1,12 +1,6 @@
-import React from 'react';
-import Form from '../../components/form';
+import Form from '@components/form';
 
-/**
- * The Contact Page
- *
- * @return {JSX.Element}
- */
-export default function Contact() {
+export default function Contact(): JSX.Element {
   return (
     <section>
       <div>

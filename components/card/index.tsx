@@ -1,22 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import Image from 'next/image';
 import cn from 'classnames';
 
 import styles from './card.module.scss';
 
-/**
- * Defines a card
- *
- * @return {JSX.Element}
- */
-export default function Card({children, progress = -1, image}) {
-  /**
-   * Render an image which has been handed over
-   *
-   * @return {JSX.Element}
-   */
-  function renderImage() {
+export default function Card({children, progress = -1, image}): JSX.Element {
+  function renderImage(): JSX.Element {
     return (
       <div className={styles.image}>
         <Image
@@ -29,12 +17,7 @@ export default function Card({children, progress = -1, image}) {
     );
   }
 
-  /**
-   * Render a progress bar on bottom of the card
-   *
-   * @return {JSX.Element}
-   */
-  function renderProgress() {
+  function renderProgress(): JSX.Element {
     return (
       <div className={styles.progress}>
         {[0, 1, 2, 3, 4].map((item) => {
@@ -56,9 +39,3 @@ export default function Card({children, progress = -1, image}) {
     </div>
   );
 }
-
-Card.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.any),
-  progress: PropTypes.number,
-  image: PropTypes.string,
-};

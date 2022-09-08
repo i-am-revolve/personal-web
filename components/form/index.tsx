@@ -1,14 +1,7 @@
-import React from 'react';
-import Card from '../card';
-
+import Card from '@components/card';
 import styles from './form.module.scss';
 
-/**
- * Creates a Form
- *
- * @return {JSX.Element}
- */
-export default function Form() {
+export default function Form(): JSX.Element {
   return (
     <Card>
       <form className={styles.root}>

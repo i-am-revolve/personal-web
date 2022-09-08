@@ -1,14 +1,7 @@
-import React from 'react';
-import Card from '../../components/card';
-
+import Card from '@components/card';
 import styles from './skills.module.scss';
 
-/**
- * The Skills page.
- *
- * @return {JSX.Element}
- */
-export default function Skills() {
+export default function Skills(): JSX.Element {
   const data = [
     {
       name: 'Development',

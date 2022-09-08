@@ -1,16 +1,9 @@
-import React from 'react';
 import {useRouter} from 'next/router';
 import Link from 'next/link';
 import cn from 'classnames';
-
 import styles from './navigation.module.scss';
 
-/**
- * The Navigation
- *
- * @return {JSX.Element}
- */
-export default function Navigation({showOnMobile, hideEvent}) {
+export default function Navigation({showOnMobile, hideEvent}): JSX.Element {
   const router = useRouter();
 
   const navItems = [

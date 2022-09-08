@@ -1,13 +1,6 @@
-import React from 'react';
-
 import styles from './home.module.scss';
 
-/**
- * The Home page.
- *
- * @return {JSX.Element}
- */
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <section className={styles.root}>
       <h1>Heading 1</h1>
