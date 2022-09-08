@@ -2,11 +2,12 @@ import Image from "next/image";
 import cn from "classnames";
 
 import styles from "./card.module.scss";
+import { Children } from "@libs/types";
 
 type CardProps = {
-  children: JSX.Element | JSX.Element[];
-  progress: number;
-  image: string;
+  children: Children;
+  progress?: number;
+  image?: string;
 };
 
 export default function Card({

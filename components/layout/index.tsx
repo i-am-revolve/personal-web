@@ -2,9 +2,10 @@ import { useState } from "react";
 import Head from "next/head";
 import Navigation from "@components/navigation";
 import styles from "./layout.module.scss";
+import { Children } from "@libs/types";
 
 type LayoutProps = {
-  children: JSX.Element[] | JSX.Element;
+  children: Children;
 };
 
 export default function Layout({ children }: LayoutProps): JSX.Element {
