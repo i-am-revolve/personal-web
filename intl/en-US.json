@@ -1,0 +1,23 @@
+{
+    "navigation": {
+        "home": "About_Me",
+        "skills": "Skills",
+        "projects": "Projects",
+        "work": "Work",
+        "contact": "Contact",
+        "language": "Language"
+    },
+    "skills": {
+        "development": "Development",
+        "dbtools": "Databases & Tools",
+        "social": "Social",
+        "etc": "Other",
+        "socialSkills": {
+            "teamplayer": "Teamplayer",
+            "communicative": "Communicative",
+            "responsible": "Responsible",
+            "reliable": "Reliable",
+            "adaptable": "Adaptable"
+        }
+    }
+}

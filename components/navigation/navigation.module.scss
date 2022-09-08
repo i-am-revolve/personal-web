@@ -28,6 +28,10 @@ nav.root {
       color: $pw-color-dark-1;
       list-style: none;
 
+      &:last-child {
+        cursor: pointer;
+      }
+
       &,
       &::before,
       &::after {
@@ -37,6 +41,10 @@ nav.root {
       &::before {
         content: "// ";
         opacity: 1;
+      }
+
+      &:last-child::before {
+        content: "";
       }
 
       &::after {

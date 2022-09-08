@@ -19,11 +19,12 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*", "components/*/index"],
-      "@libs/*":       ["libs/*", "libs/*/index"],
-      "@pages/*":      ["pages/*", "pages/*/index"],
-      "@public/*":     ["public/*", "public/*/index"],
-      "@styles/*":     ["styles/*", "styles/*/index"],
+      "@components/*": ["components/*",        "components/*/index"],
+      "@libs/*":       ["libs/*",              "libs/*/index"],
+      "@pages/*":      ["pages/*",             "pages/*/index"],
+      "@public/*":     ["public/*",            "public/*/index"],
+      "@styles/*":     ["styles/*",            "styles/*/index"],
+      "@intl/*":       ["intl/*",              "intl/*/index"],
       "*":             ["*", "node_modules/*", "node_modules/*/index"]
     }
   },

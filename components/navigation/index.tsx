@@ -3,6 +3,7 @@ import Link from "next/link";
 import cn from "classnames";
 import styles from "./navigation.module.scss";
 import { MouseEventHandler } from "react";
+import { useLocale } from "@libs/intl";
 
 type NavigationProps = {
   showOnMobile: boolean;
@@ -13,30 +14,43 @@ export default function Navigation({
   showOnMobile,
   hideEvent,
 }: NavigationProps): JSX.Element {
-  const router = useRouter();
+  const { pathname, locale, locales } = useRouter();
+  const __ = useLocale(locale);
 
   const navItems = [
     {
-      name: "Home",
+      name: __("navigation.home"),
       path: "/",
     },
     {
-      name: "Skills",
+      name: __("navigation.skills"),
       path: "/skills",
     },
     {
-      name: "Projects",
+      name: __("navigation.projects"),
       path: "/projects",
     },
     {
-      name: "Work",
+      name: __("navigation.work"),
       path: "/work",
     },
     {
-      name: "Contact",
+      name: __("navigation.contact"),
       path: "/contact",
     },
   ];
+
+  function getInactiveLocale(): string {
+    let result = locale;
+
+    locales.forEach((loc) => {
+      if (loc !== locale) {
+        result = loc;
+      }
+    });
+
+    return result;
+  }
 
   return (
     <nav
@@ -50,12 +64,17 @@ export default function Navigation({
             <li
               key={navItem.name}
               onClick={hideEvent}
-              className={router.pathname === navItem.path ? styles.active : ""}
+              className={pathname === navItem.path ? styles.active : ""}
             >
               <Link href={navItem.path}>{navItem.name}</Link>
             </li>
           );
         })}
+        <li>
+          <Link href={`/${getInactiveLocale()}${pathname}`}>
+            {`${__("navigation.language")}(${locale})`}
+          </Link>
+        </li>
       </ul>
     </nav>
   );

@@ -1,10 +1,15 @@
 import Card from "@components/card";
+import { useLocale } from "@libs/intl";
+import { useRouter } from "next/router";
 import styles from "./skills.module.scss";
 
 export default function Skills(): JSX.Element {
+  const { locale } = useRouter();
+  const __ = useLocale(locale);
+
   const data = [
     {
-      name: "Development",
+      name: __("skills.development"),
       items: [
         {
           name: "JavaScript",
@@ -44,7 +49,7 @@ export default function Skills(): JSX.Element {
       ],
     },
     {
-      name: "Databases & Tools",
+      name: __("skills.dbtools"),
       items: [
         {
           name: "SQL",
@@ -61,40 +66,50 @@ export default function Skills(): JSX.Element {
           image: "/images/RedisLogo.png",
           progress: 2,
         },
+        {
+          name: "Figma",
+          image: "/images/FigmaLogo.png",
+          progress: 3,
+        },
+        {
+          name: "Photoshop",
+          image: "/images/PhotoshopLogo.png",
+          progress: 1,
+        },
       ],
     },
     {
-      name: "Social",
+      name: __("skills.social"),
       items: [
         {
-          name: "Teamplayer",
+          name: __("skills.socialSkills.teamplayer"),
           image: "/images/JavaScriptLogo.png",
           progress: 5,
         },
         {
-          name: "Communicative",
+          name: __("skills.socialSkills.communicative"),
           image: "/images/JavaScriptLogo.png",
           progress: 5,
         },
         {
-          name: "Responsibe",
+          name: __("skills.socialSkills.responsible"),
           image: "/images/JavaScriptLogo.png",
           progress: 5,
         },
         {
-          name: "Reliable",
+          name: __("skills.socialSkills.reliable"),
           image: "/images/JavaScriptLogo.png",
           progress: 5,
         },
         {
-          name: "Adaptable",
+          name: __("skills.socialSkills.adaptable"),
           image: "/images/JavaScriptLogo.png",
           progress: 5,
         },
       ],
     },
     {
-      name: "Other",
+      name: __("skills.etc"),
       items: [
         {
           name: "Windows",
@@ -105,11 +120,6 @@ export default function Skills(): JSX.Element {
           name: "Linux",
           image: "/images/LinuxLogo.png",
           progress: 3,
-        },
-        {
-          name: "Unknown",
-          image: "/images/JavaScriptLogo.png",
-          progress: 0,
         },
       ],
     },

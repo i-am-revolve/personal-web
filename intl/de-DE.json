@@ -1,0 +1,23 @@
+{
+  "navigation": {
+      "home": "Über_Mich",
+      "skills": "Fähigkeiten",
+      "projects": "Projekte",
+      "work": "Arbeit",
+      "contact": "Kontakt",
+      "language": "Sprache"
+  },
+  "skills": {
+      "development": "Entwicklung",
+      "dbtools": "Datenbanken & Programme",
+      "social": "Soziales",
+      "etc": "Weitere",
+      "socialSkills": {
+          "teamplayer": "Teamfähig",
+          "communicative": "Kommunikativ",
+          "responsible": "Verantwortung",
+          "reliable": "Zuverlässig",
+          "adaptable": "Anpassbar"
+      }
+  }
+}

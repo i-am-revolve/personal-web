@@ -17,5 +17,8 @@
   "globals": {
     "React": "readonly",
     "JSX": "readonly"
-  }
+  },
+  "ignorePatterns": [
+    "next.config.js"
+  ]
 }
